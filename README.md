@@ -1,6 +1,24 @@
-# Landslide-Risk-Model-Python-GIS-
+# Landslide Risk Model (Python GIS)
+
+## Overview
 This project builds a simple landslide susceptibility model using slope, rainfall, and soil strength.
 
-A weighted overlay method is applied to compute risk scores, followed by stress testing and sensitivity analysis.
+## Method
+- Data normalization (0–1 scaling)
+- Weighted overlay model
+- Sensitivity analysis (multiple weights)
+- Stress testing (extreme rainfall & slope)
+- Spatial visualization (scatter + raster concept)
 
-Spatial visualization is used to simulate hazard distribution patterns.
+## Results
+- Location E is consistently the highest-risk area
+- Ranking remains stable under stress scenarios
+- Model shows robustness in hazard classification
+
+## Visualization
+- Bar chart (risk distribution)
+- Scatter map (pseudo GIS)
+- Raster heatmap (GIS concept)
+
+## Notes
+This is a conceptual GIS model and not based on real DEM data.
