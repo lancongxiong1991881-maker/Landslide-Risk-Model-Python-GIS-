@@ -150,7 +150,11 @@ weight_risk={
 }
 
 for name1,(rs,rr,rss) in weight_risk.items():
-    df[name1] = rs*df["slope_n"]+rr*df["rainfall_n"]+(1-rss*df["soil_strength_n"])
+    df[name1] = (
+    rs*df["slope_n"] +
+    rr*df["rainfall_n"] +
+    rss*(1 - df["soil_strength_n"])
+)
 
 print("Risk 1 Ranking:")
 print(df.sort_values("risk1",ascending=False)["location"])
